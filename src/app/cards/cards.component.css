@@ -1,0 +1,25 @@
+
+.card{
+  width: 60%;
+  height: 70%;
+}
+
+
+.main-container{
+  display: flex;
+  height: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
+.left-container{
+  width: 85%;
+  background-color: rgb(243, 243, 243);
+
+}
+
+.rigth-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}

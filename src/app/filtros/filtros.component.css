@@ -1,0 +1,35 @@
+.opcion-icon{
+  width: 26px;
+  padding-right:5px ;
+}
+
+
+.opcion-container{
+  display: flex;
+}
+
+
+.container{
+  width: 100%;
+  display: block;
+
+}
+
+.button{
+  justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.select{
+  display: flex;
+  justify-content: flex-start;
+  /* margin-left: 44px; */
+  align-items: center;
+
+}
+
+.select-opcions{
+  margin-left: 50px;
+}

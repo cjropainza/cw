@@ -1,0 +1,30 @@
+<mat-grid-list cols="2" rowHeight="150px">
+  <mat-grid-tile *ngFor="let noticia of dataCard" [colspan]="1"
+    ><mat-card class="card">
+      <div class="main-container">
+        <div class="left-container">
+          <mat-card-header>
+            <mat-card-subtitle>
+              <mat-icon>history</mat-icon>
+              {{ noticia.fecha }}
+            </mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              {{ noticia.texto }}
+            </p>
+          </mat-card-content>
+        </div>
+        <div class="rigth-container">
+          <button
+            mat-mini-fab
+            color="none"
+            aria-label="Example icon button with a menu icon"
+          >
+            <mat-icon>favorite_border</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-card></mat-grid-tile
+  >
+</mat-grid-list>

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="button">
+    <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red">All</mat-button-toggle>
+      <mat-button-toggle value="green">My Faves</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <div class="select">
+    <mat-form-field appearance="fill" class="select-opcions">
+      <mat-label>Opciones</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let opc of opciones" [value]="opc.value">
+          <div class="opcion-container">
+            <div class="opcion-icon-container">
+              <img class="opcion-icon" src="{{ opc.icon }}" />
+            </div>
+            <div class="opcion-value-container">{{ opc.viewValue }}</div>
+          </div>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
